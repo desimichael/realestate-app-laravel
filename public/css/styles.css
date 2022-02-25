@@ -23,7 +23,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: "IBM Plex Sans", sans-serif;
   vertical-align: baseline;
 }
 
@@ -6729,6 +6729,73 @@ progress {
     display: none !important;
   }
 }
-body {
+.header {
+  height: 80px;
+  position: relative;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header__logo {
+  display: flex;
+  color: #090a0c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.header__menu-link {
+  color: #090a0c;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.header__menu-link:hover {
+  color: #f2f7fa;
   background-color: #738493;
+}
+.header__menu-link--active {
+  color: #f2f7fa;
+  background-color: #738493;
+  border: 1px solid #b4dbe8;
+}
+.header__account {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 0;
+}
+.header__account-link {
+  height: 40px;
+  width: 40px;
+  background-color: #090a0c;
+  border: 1px solid #b4dbe8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.header__account-link:hover {
+  background-color: #738493;
+}
+.header__account-link:last-child {
+  margin-right: 0;
+}
+.header__account-link i {
+  color: #f2f7fa;
+  font-size: 1.2rem;
 }
