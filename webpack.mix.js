@@ -15,3 +15,10 @@ mix
     .sass('resources/css/styles.scss', 'public/css')
     .browserSync('localhost:8080')
     .disableNotifications();
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> e678cb96175cd300e6530cd9c69fe3da215575c8
