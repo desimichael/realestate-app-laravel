@@ -5,11 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rhea Realty</title>
-<<<<<<< HEAD
-  <link rel="stylesheet" href="{{mix('/css/styles.css')}}">
-</head>
-<body>
-=======
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -46,7 +41,6 @@
   </header>
 
 
->>>>>>> e678cb96175cd300e6530cd9c69fe3da215575c8
   @yield('content')
 </body>
 </html>
