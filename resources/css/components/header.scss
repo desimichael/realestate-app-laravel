@@ -15,6 +15,9 @@
     text-transform: capitalize;
     text-decoration: none;
     transition: all .2s ease-in-out;
+    &:hover {
+      color: #090a0c;
+    }
   }
   &__menu {
     display: flex;

@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('page-title', 'Rhea Realty')
+
 
 @section('content')
 

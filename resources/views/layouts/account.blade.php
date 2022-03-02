@@ -17,6 +17,30 @@
 </head>
 <body>
   @include('components/header')
-  @yield('content')
+  
+  <div class="account-layout">
+    <div class="listings-city">
+      <img src="@yield('page-bg')" alt="listings image" class="listings-city__image">
+      <h1 class="listings-city__title">
+        Saved Listing
+      </h1>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="account__menu">
+              <h2>Menu</h2>
+              <a href="/account/saved">Saved listings</a>
+              <a href="/account/show-status">Listing Request Status</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            @yield('content')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,5 +1,4 @@
-.listings-page {
-
+.account-layout {
   .listings-city {
     position: relative;
     background-color: #090a0c;
@@ -22,51 +21,26 @@
       opacity: .8;
     }
   }
-  .listings-filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__wrapper {
-      background-color: #ffffff;
-      display: flex;
-      padding: 20px;
-      position: relative;
-      transform: translate(0,-50%);
-    }
-    &__option,
-    &__button {
-      background-color: #f2f7fa;
-      border: 1px solid #090a0c;
+  .content {
+    padding: 75px 0px;
+  }
+  .account__menu {
+    h2 {
       color: #1a232a;
-      padding: 0px 15px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-transform: capitalize;
-      font-size: .9rem;
-      font-weight: 300;
-      margin-right: .5rem;
-      cursor: pointer;
+      font-weight: 700;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #1a232a;
+      font-size: 1rem;
       transition: all .2s ease-in-out;
       &:hover {
-        background-color: #738493;
-        color: #fbfbfb;
+        color: #738493;
       }
-    }
-    .fa-chevron-down {
-      margin-left: 1rem;
-    }
-    &__button {
-      margin-right: 0;
-      background-color: #090a0c;
-      border: 1px solid #b4dbe8;
-      color: #fbfbfb;
-      text-decoration: none;
     }
   }
   .listings-properties {
-    padding: 50px 0;
     &__item {
       padding: 10px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
