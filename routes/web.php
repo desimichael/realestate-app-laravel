@@ -13,9 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Home Page
 Route::get('/', function () {
     return view('pages/home');
 });
+
+// Show All Listings
+Route::get('/{property_type}/{listing_type}/{city}', function () {
+    return view('pages/listings');
+});
+
+// Single Listing
+Route::get('/listing/{slug}{id}/', function () {
+    return view('welcome');
+});
+
+// User Login
+Route::get('/login', function () {
+    return view('welcome');
+});
+
+// User Register
+Route::get('/register', function () {
+    return view('welcome');
+});
+
+
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
