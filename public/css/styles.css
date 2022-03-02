@@ -23,7 +23,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   vertical-align: baseline;
 }
 
@@ -6729,11 +6729,10 @@ progress {
     display: none !important;
   }
 }
-<<<<<<< HEAD
-=======
 .header {
   height: 80px;
   position: relative;
+  background-color: #f2f7fa;
 }
 .header .container {
   display: flex;
@@ -6801,4 +6800,91 @@ progress {
   color: #f2f7fa;
   font-size: 1.2rem;
 }
->>>>>>> e678cb96175cd300e6530cd9c69fe3da215575c8
+
+.hero {
+  padding: 0 50px;
+  background-color: #f2f7fa;
+  position: relative;
+}
+.hero__images {
+  display: flex;
+  max-width: 100vw;
+  height: calc(100vh - 80px);
+  transition: all 0.6s ease-in-out;
+  overflow: hidden;
+}
+.hero__image {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+.hero__info {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  color: #090a0c;
+  font-size: 5rem;
+  font-weight: 900;
+  width: 350px;
+  z-index: 15;
+}
+.hero__info-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.hero__info-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+.hero__info-link {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #090a0c;
+  transition: hover 0.2s ease-in-out;
+}
+.hero__info-link:hover {
+  color: #738493;
+}
+.hero__image-img {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.hero__indicator {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  color: #090a0c;
+  background-color: #f2f7fa;
+  border-top: 1px solid #b4dbe8;
+  border-left: 1px solid #b4dbe8;
+  display: flex;
+  padding: 1rem;
+}
+.hero__indicator-item {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.hero__indicator-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-right: 1.5rem;
+}
+.hero__indicator-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+  width: 60px;
+  margin-right: 2rem;
+}
