@@ -34,8 +34,9 @@
     </div>
     <div class="listings-properties">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 col-xl-4">
+        <div class="row">     
+          @for ($i = 1; $i <= 12; $i++)
+          <div class="col-sm-6 col-lg-4 col-xl-3">
             <div class="listings-properties__item">
               <img src="https://images.pexels.com/photos/7031595/pexels-photo-7031595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="item image">
               <a href="#" class="listings-properties__saved">
@@ -62,6 +63,7 @@
               </span>
             </div>
           </div>
+          @endfor
       </div>
     </div>
   </div>

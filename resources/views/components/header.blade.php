@@ -4,7 +4,7 @@
         Rhea Realty
       </a>
       <nav class="header__menu">
-        <a href="/home/for_sale/buckhead" class="header__menu-link">Listing</a>
+        <a href="/home/for_sale/buckhead" class="header__menu-link">Listings</a>
         <a href="#" class="header__menu-link">About Us</a>
         <a href="#" class="header__menu-link">Agents</a>
       </nav>
