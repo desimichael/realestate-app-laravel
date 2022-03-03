@@ -40,7 +40,7 @@ Route::get('/account/saved', function () {
 });
 // User Show Status
 Route::get('/account/show-status', function () {
-    return view('welcome');
+    return view('pages/show-status');
 });
 
 

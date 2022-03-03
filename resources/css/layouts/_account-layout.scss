@@ -25,9 +25,12 @@
     padding: 75px 0px;
   }
   .account__menu {
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
     h2 {
       color: #1a232a;
       font-weight: 700;
+      margin-bottom: 1rem;
     }
     a {
       display: block;

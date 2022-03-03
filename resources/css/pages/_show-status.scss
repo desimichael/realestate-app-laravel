@@ -1,0 +1,51 @@
+.account-layout {
+  .request-list {
+    h2 {
+      color: #1a232a;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    &__wrapper {
+      padding: 10px;
+      background-color: #f2f7fa;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    &__item {
+      h4 {
+        color: #1a232a;
+        text-transform: capitalize;
+        font-weight: 300;
+      }
+    }
+    &__item-details {
+      color: #738493;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__info-title {
+      font-weight: 700;
+    }
+    &__info-status {
+      padding: 7px 10px;
+      &--success {
+        background: #0bda51;
+        color: #fbfbfb;
+      }
+      &--cancel {
+        background: #ff8c00;
+        color: #fbfbfb;
+      }
+      &--sold {
+        background: #ff0000;
+        color: #fbfbfb;
+      }
+    }
+  }
+}
