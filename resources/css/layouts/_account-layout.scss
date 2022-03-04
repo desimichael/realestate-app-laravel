@@ -45,10 +45,12 @@
   }
   .listings-properties {
     &__item {
+      display: block;
       padding: 10px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       margin-bottom: 1.5rem;
       position: relative;
+      text-decoration: none;
     }
     img {
       width: 100%;
@@ -85,12 +87,18 @@
       font-weight: 700;
       font-size: 2rem;
       margin-bottom: .5rem;
+      &:hover {
+        color: #ff0000;
+      }
     }
     &__item-details {
       font-size: 1.1rem;
       display: block;
       color: #738493;
       margin-bottom: .5rem;
+      &:hover {
+        color: #ff0000;
+      }
     }
     &__item-address {
       font-size: .9rem;
@@ -98,6 +106,9 @@
       color: #1a232a;
       margin-bottom: .5rem;
       text-transform: capitalize;
+      &:hover {
+        color: #ff0000;
+      }
     }
     &__item-line {
       background-color: #738493;
@@ -106,7 +117,7 @@
     &__item-agent {
       font-size: .9rem;
       display: block;
-      color: #738493;
+      color: #1a232a;
       text-transform: capitalize;
       text-align: center;
     }

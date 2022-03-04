@@ -8,11 +8,11 @@
   <div class="listings-properties">
     <div class="row">
       <div class="col-sm-6 col-lg-4 col-xl-4">
-        <div class="listings-properties__item">
+        <a href="#" class="listings-properties__item">
           <img src="https://images.pexels.com/photos/7031595/pexels-photo-7031595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="item image">
-          <a href="#" class="listings-properties__saved">
+          <div class="listings-properties__saved">
             <i class="fa-solid fa-heart"></i>
-          </a>
+          </div>
           <span class="listings-properties__item-price">
             $300,000
           </span>
@@ -32,7 +32,7 @@
           <span class="listings-properties__item-agent">
             stephon rhea
           </span>
-        </div>
+        </a>
       </div>
     </div>
   </div>

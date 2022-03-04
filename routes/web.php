@@ -45,6 +45,7 @@ Route::get('/account/show-status', function () {
 
 
 
+// User Authentication
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

@@ -1,6 +1,7 @@
 @extends('layouts.main')
-
 @section('page-title', '123 Piedmont Ave - Rhea Realty')
+
+
 @section('content')
   <div class="single-listing-page">
     <div class="listing-top">

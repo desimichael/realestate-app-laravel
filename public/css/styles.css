@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+textarea:focus, input:focus {
+  outline: none;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -6776,10 +6780,12 @@ progress {
   color: #738493;
 }
 .account-layout .listings-properties__item {
+  display: block;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 1.5rem;
   position: relative;
+  text-decoration: none;
 }
 .account-layout .listings-properties img {
   width: 100%;
@@ -6818,11 +6824,17 @@ progress {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+.account-layout .listings-properties__item-price:hover {
+  color: #ff0000;
+}
 .account-layout .listings-properties__item-details {
   font-size: 1.1rem;
   display: block;
   color: #738493;
   margin-bottom: 0.5rem;
+}
+.account-layout .listings-properties__item-details:hover {
+  color: #ff0000;
 }
 .account-layout .listings-properties__item-address {
   font-size: 0.9rem;
@@ -6831,6 +6843,9 @@ progress {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
 }
+.account-layout .listings-properties__item-address:hover {
+  color: #ff0000;
+}
 .account-layout .listings-properties__item-line {
   background-color: #738493;
   height: 1px;
@@ -6838,7 +6853,7 @@ progress {
 .account-layout .listings-properties__item-agent {
   font-size: 0.9rem;
   display: block;
-  color: #738493;
+  color: #1a232a;
   text-transform: capitalize;
   text-align: center;
 }
@@ -7204,6 +7219,68 @@ progress {
   color: #fbfbfb;
 }
 
+.auth-page {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-page__form {
+  padding: 15px;
+  background-color: #f2f7fa;
+  opacity: 0.9;
+  border-radius: 5px;
+  min-width: 325px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.auth-page__title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.auth-page__form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.auth-page__form-label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.auth-page__form-input, .auth-page__form-button {
+  background-color: #f2f7fa;
+  border: 1px solid #090a0c;
+  color: #1a232a;
+  padding: 0px 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-right: 0.5rem;
+  width: 100%;
+}
+.auth-page__form-input:nth-last-child(1), .auth-page__form-button:nth-last-child(1) {
+  margin-right: 0;
+}
+.auth-page__form-button {
+  margin-right: 0;
+  background-color: #090a0c;
+  border: 1px solid #b4dbe8;
+  color: #fbfbfb;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.auth-page__form-button:hover {
+  background-color: #738493;
+  color: #fbfbfb;
+}
+
 .single-listing-page .listing-top {
   height: 500px;
   position: relative;
@@ -7283,4 +7360,10 @@ progress {
   border: 1px solid #b4dbe8;
   color: #fbfbfb;
   text-decoration: none;
+}
+
+.error-sub-text {
+  font-size: 0.8rem;
+  color: red;
+  padding: 10px 0;
 }
