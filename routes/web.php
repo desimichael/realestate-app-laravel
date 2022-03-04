@@ -18,17 +18,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages/home');
 });
+// Single Listing
+Route::get('/listing/{slug}/{id}/', function () {
+    return view('pages/single-listing');
+});
 // Show All Listings
 Route::get('/{property_type}/{listing_type}/{city}', function () {
     return view('pages/listings');
 });
-// Single Listing
-Route::get('/listing/{slug}{id}/', function () {
-    return view('welcome');
-});
 // User Login
 Route::get('/login', function () {
-    return view('welcome');
+    return view('pages/login');
 });
 // User Register
 Route::get('/register', function () {
