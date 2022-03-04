@@ -32,7 +32,7 @@ Route::get('/login', function () {
 });
 // User Register
 Route::get('/register', function () {
-    return view('welcome');
+    return view('pages/register');
 });
 // User Saved Listings
 Route::get('/account/saved', function () {

@@ -7236,13 +7236,13 @@ progress {
 .auth-page__title {
   text-align: center;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .auth-page__form-group {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .auth-page__form-label {
   font-size: 1rem;
@@ -7258,7 +7258,6 @@ progress {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: capitalize;
   font-size: 0.9rem;
   font-weight: 300;
   margin-right: 0.5rem;
@@ -7339,7 +7338,6 @@ progress {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: capitalize;
   font-size: 0.9rem;
   font-weight: 300;
   margin-right: 0.5rem;
@@ -7366,4 +7364,16 @@ progress {
   font-size: 0.8rem;
   color: red;
   padding: 10px 0;
+}
+
+.forgot-password,
+.confirm-reg {
+  font-size: 0.9rem;
+  color: #1a232a;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.forgot-password:hover,
+.confirm-reg:hover {
+  color: #738493;
 }

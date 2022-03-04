@@ -4,7 +4,7 @@
 
 @section('content')
   <div class="auth-page auth-page--login">
-      <form method="POST" action="{{ route('login') }}" class="auth-page__form">
+    <form method="POST" action="{{ route('login') }}" class="auth-page__form">
         @csrf
       <h3 class="auth-page__title">Login</h3>
       <div class="auth-page__form-group">
@@ -28,12 +28,13 @@
       <div class="auth-page__form-group">
         <label for="email" class="auth-page__form-label">
             Remember Me
-            <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
+            <input id="remember_me" type="checkbox" name="remember">
         </label>   
       </div>
       <div class="auth-page__form-group">
         @if (Route::has('password.request'))
-            <a href="{{ route('password.request') }}">
+            <a href="{{ route('password.request') }}"
+            class="forgot-password">
                 Forgot password?
             </a>
         @endif

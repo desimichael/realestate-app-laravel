@@ -14,13 +14,13 @@
   &__title {
     text-align: center;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   &__form-group {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
   }
   &__form-label {
     font-size: 1rem;
@@ -37,7 +37,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: capitalize;
     font-size: .9rem;
     font-weight: 300;
     margin-right: .5rem;

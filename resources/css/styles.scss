@@ -18,6 +18,15 @@
   color: red;
   padding: 10px 0;
 }
-
+.forgot-password,
+.confirm-reg {
+  font-size: .9rem;
+  color: #1a232a;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  &:hover {
+    color: #738493
+  }
+}
 
 
