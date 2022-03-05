@@ -6862,11 +6862,12 @@ progress {
   height: 80px;
   position: relative;
   background-color: #f2f7fa;
+  display: flex;
+  align-items: center;
 }
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .header__logo {
   display: flex;
@@ -6906,6 +6907,7 @@ progress {
 .header__account {
   margin-left: auto;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   padding: 15px 0;
 }
@@ -6919,8 +6921,20 @@ progress {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   transition: all 0.2s ease-in-out;
+}
+.header__account-link--anchor {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #090a0c;
+  text-transform: capitalize;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.header__account-link--anchor:hover {
+  color: #738493;
 }
 .header__account-link:hover {
   background-color: #738493;
