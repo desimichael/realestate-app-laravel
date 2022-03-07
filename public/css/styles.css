@@ -7252,6 +7252,9 @@ progress {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+.auth-page__desc {
+  margin-bottom: 1rem;
+}
 .auth-page__form-group {
   display: flex;
   flex-direction: column;

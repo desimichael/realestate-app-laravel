@@ -30,8 +30,8 @@
         <div class="row">
           <div class="col-md-3">
             <div class="account__menu">
-              <h5>Welcome Back {{ Auth::user()->name }}</h5>
-              <h2>Menu</h2>
+              <h6>Welcome Back {{ Auth::user()->name }}</h6>
+              <h1>Menu</h1>
               <a href="{{route('account')}}">Saved listings</a>
               <a href="{{route('show-status')}}">Listing Request Status</a>
             </div>

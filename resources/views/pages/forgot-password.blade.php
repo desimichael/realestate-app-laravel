@@ -4,34 +4,19 @@
 
 @section('content')
   <div class="auth-page auth-page--forgot-password">
-    <form method="POST" action="{{ route('password.email') }}" class="auth-page__form">
-        @csrf
-      <h3 class="auth-page__title">Forgot Password</h3>
-        <p class="auth-page__desc"> Forgot your password? No problem.</p>
+    <form action="" method="POST" class="auth-page__form">
+      <h3 class="auth-page__title">Reset Password</h3>
+      <span> Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.</span>
       <div class="auth-page__form-group">
-        <label for="email" :value="__('Email')" class="auth-page__form-label">Email:</label>
-        <input type="email" name="email" :value="old('email')" required  class="auth-page__form-input">
-        @error('email')
-         <div class="error-sub-text">
-             {{$message}}
-         </div>
-        @enderror
+        <label for="email" class="auth-page__form-label">Email:</label>
+        <input type="email" name="email" class="auth-page__form-input">
       </div>
       <div class="auth-page__form-group">
-        <button type="submit" class="auth-page__form-button">{{ __('Password Reset') }}</button>
+        <button type="submit" class="auth-page__form-input">Submit</button>
       </div>
     </form>
   </div>
 @endsection
-
-
-
-
-
-
-
-
-
 
 
 
