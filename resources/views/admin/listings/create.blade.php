@@ -33,44 +33,48 @@
                       id="city" value="{{ old('city') }}">
               </div>
               <div class="mb-3 col-md-4">
-                <label class="form-label" name="state" for="state">State</label> <select id="state" class="form-control">
+                <label class="form-label" for="state">State</label> 
+                <select id="state" class="form-control" name="state">
                   <option 
                     value="GA"
                     @selected(old('version') == 'GA')>Georgia</option>
                   <option value="TX"
                     @selected(old('version') == 'TX')>Texas</option>
                 </select></div>
-              <div class="mb-3 col-md-2"><label
+              <div class="mb-3 col-md-2">
+                <label
                       class="form-label"
-                      for="zipcode">Zipcode</label> <input
+                      for="zipcode">Zipcode</label> 
+                      <input
                       type="text" class="form-control"
                       name="zipcode"
-                      id="zipcode" value="{{ old('zipcode') }}">></div>
+                      id="zipcode" value="{{ old('zipcode') }}"></div>
             </div> 
             <div class="row">
               <div class="mb-3 col-md-6"><label
                       class="form-label"
+                      for="bedrooms">Bedrooms</label> 
+                      <input
+                      type="text" class="form-control" 
                       name="bedrooms"
-                      for="bedrooms">Bedrooms</label> <input
-                      type="text" class="form-control"
-                      id="bedrooms" placeholder="3" value="{{ old('bedrooms') }}">>
+                      id="bedrooms" placeholder="3" value="{{ old('bedrooms') }}">
               </div>
             </div>
             <div class="row">
               <div class="mb-3 col-md-6"><label
                       class="form-label"
-                      name="bathrooms"
                       for="bathrooms">Bathrooms</label> <input
                       type="text" class="form-control"
-                      id="bedrooms" placeholder="2" value="{{ old('bathrooms') }}">
+                      name="bathrooms"
+                      id="bathrooms" placeholder="2" value="{{ old('bathrooms') }}">
               </div>
             </div>
             <div class="row">
               <div class="mb-3 col-md-6"><label
                       class="form-label"
-                      name="squarefootage"
                       for="squarefootage">SQFT</label> <input
                       type="text" class="form-control"
+                      name="squarefootage"
                       id="squarefootage" placeholder="2025" value="{{ old('squarefootage') }}">
               </div>
             </div>
