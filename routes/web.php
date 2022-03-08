@@ -14,6 +14,37 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+// Admin
+Route::group([
+    'prefix' => 'admin',
+    'as' => 'admin.'
+], function() {
+
+    // Dashboard
+    Route::get('/', function () {
+        return view('admin/dashboard');
+    })->name('dashboard');
+
+
+    // Listings
+    Route::group([
+        'prefix' => 'listings',
+        'as' => 'listings.'
+], function() {
+    // Now have controller
+    Route::get('/',[App\Http\Controllers\Admin\ListingController::class, 'index'])->name('index');
+    
+    Route::get('/create',[App\Http\Controllers\Admin\ListingController::class, 'create'])->name('create');
+
+    Route::get('/{id}/edit',[App\Http\Controllers\Admin\ListingController::class, 'edit'])->name('edit');
+
+
+   });
+});
+
+
+
+
 // Home Page
 Route::get('/', function () {
     return view('pages/home');
@@ -48,15 +79,7 @@ Route::get('/account/show-status', function () {
     return view('pages/show-status');
 })->name('show-status');
 
-// Admin
-Route::group([
-    'prefix' => 'admin',
-    'as' => 'admin.'
-], function() {
-    Route::get('/', function () {
-        return view('admin/dashboard');
-    })->name('dashboard');
-});
+
 
 // User Authentication
 // Route::get('/dashboard', function () {

@@ -937,9 +937,6 @@ select {
 .p-6 {
   padding: 1.5rem;
 }
-.p-2 {
-  padding: 0.5rem;
-}
 .p-0 {
   padding: 0px;
 }
@@ -948,6 +945,9 @@ select {
 }
 .p-10 {
   padding: 2.5rem;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .px-4 {
   padding-left: 1rem;
