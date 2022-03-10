@@ -71,7 +71,7 @@
   <script>window.addEventListener("load", (function () { const t = document.getElementById("loader"); setTimeout((function () { t.classList.add("fadeOut") }), 300) }))</script>
   <div>
     <!-- #Left Sidebar ==================== -->
-    <div class="sidebar">
+    <div class="sidebar" style="background:#000060;">
       <div class="sidebar-inner">
         <!-- ### $Sidebar Header ### -->
         <div class="sidebar-logo">
@@ -86,8 +86,8 @@
                            alt=""></div>
                   </div>
                   <div class="peer peer-greed">
-                    <h5 class="lh-1 mB-0 logo-text">
-                      Adminator</h5>
+                    <h5 class="lh-1 mB-0 logo-text" style="color: #fbfbfb">
+                      Rhea Realty</h5>
                   </div>
                 </div>
               </a></div>
