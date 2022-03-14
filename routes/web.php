@@ -13,12 +13,81 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Admin
+Route::group([
+    'prefix' => 'admin',
+    'as' => 'admin.'
+], function() {
+
+    // Dashboard
+    Route::get('/', function () {
+        return view('admin/dashboard');
+    })->name('dashboard');
+
+
+    // Listings
+    Route::group([
+        'prefix' => 'listings',
+        'as' => 'listings.'
+], function() {
+    // Now have controller
+    Route::get('/',[App\Http\Controllers\Admin\ListingController::class, 'index'])->name('index');
+    
+    Route::get('/create',[App\Http\Controllers\Admin\ListingController::class, 'create'])->name('create');
+
+    Route::post('/',[App\Http\Controllers\Admin\ListingController::class, 'store'])->name('store');
+
+    Route::get('/{slug}/{id}/edit',[App\Http\Controllers\Admin\ListingController::class, 'edit'])->name('edit');
+
+    Route::put('/{slug}/{id}',[App\Http\Controllers\Admin\ListingController::class, 'update'])->name('update');
+
+    Route::get('/{slug}/{id}/delete',[App\Http\Controllers\Admin\ListingController::class, 'destroy'])->name('delete');
+   });
+});
+
+
+
+
+// Home Page
 Route::get('/', function () {
     return view('pages/home');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Single Listing
+Route::get('/listing/{slug}/{id}/', function () {
+    return view('pages/single-listing');
+});
+
+// Show All Listings
+Route::get('/{property_type}/{listing_type}/{city}', function () {
+    return view('pages/listings');
+})->name('listings');
+
+// // User Login
+// Route::get('/login', function () {
+//     return view('pages/login');
+// });
+// // User Register
+// Route::get('/register', function () {
+//     return view('pages/register');
+// });
+
+// User Saved Listings
+Route::get('/account', function () {
+    return view('pages/saved-listings');
+})->name('account');
+
+// User Show Status
+Route::get('/account/show-status', function () {
+    return view('pages/show-status');
+})->name('show-status');
+
+
+
+// User Authentication
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';

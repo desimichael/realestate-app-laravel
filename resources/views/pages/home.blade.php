@@ -1,9 +1,11 @@
 @extends('layouts.main')
 
+@section('page-title', 'Rhea Realty')
+
 
 @section('content')
 
-  <h1>Home</h1>
+ @include('components.hero')
 
 @endsection
 
