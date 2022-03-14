@@ -13,7 +13,7 @@
             @csrf
             <div class="mb-3">
               <label class="form-label" for="address">Address</label> 
-              <input type="text" class="form-control" name="address" id="address" placeholder=" ex: 1234 Main St" value="{{ old('address') }}">
+              <input type="text" class="form-control" name="address" id="address" placeholder=" ex: 123 Piedmont Rd" value="{{ old('address') }}">
                 @error('address')
                   <div class="error-sub-text">
                       {{$message}}
@@ -51,9 +51,9 @@
                 <select id="state" class="form-control" name="state">
                   <option 
                     value="GA"
-                    @selected(old('version') == 'GA')>Georgia</option>
+                    @selected(old('state') == 'GA')>Georgia</option>
                   <option value="TX"
-                    @selected(old('version') == 'TX')>Texas</option>
+                    @selected(old('state') == 'TX')>Texas</option>
                 </select>
                 @error('state')
                   <div class="error-sub-text">
