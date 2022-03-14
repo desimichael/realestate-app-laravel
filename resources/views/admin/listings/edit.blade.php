@@ -112,7 +112,9 @@
               </div>
             </div>
             <button type="submit"
-                    class="btn btn-primary btn-color">Edit Listing</button>
+                    class="btn btn-primary btn-color">Save</button>
+            <a href="{{ route('admin.listings.delete',['slug' => $listing->slug, 'id' => $listing->id]) }}" onclick="return confirm('Are you sure you want to delete this listing?')"
+                    class="btn btn-danger btn-color">Delete</a>
           </form>
         </div>
       </div>
