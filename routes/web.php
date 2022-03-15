@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 // Admin
 Route::group([
     'prefix' => 'admin',
+    'middleware' => ['auth', 'is_admin'],
     'as' => 'admin.'
 ], function() {
 
