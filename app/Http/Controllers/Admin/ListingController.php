@@ -67,6 +67,7 @@ class ListingController extends Controller
         $listing->bedrooms = $request->get('bedrooms');
         $listing->bathrooms = $request->get('bathrooms');
         $listing->squarefootage = $request->get('squarefootage');
+        $listing->status = "draft";
 
 
 
@@ -140,6 +141,8 @@ class ListingController extends Controller
         $listing->bedrooms = $request->get('bedrooms');
         $listing->bathrooms = $request->get('bathrooms');
         $listing->squarefootage = $request->get('squarefootage');
+        $listing->status = $request->get('status');
+        $listing->description = $request->get('description');
 
 
 
