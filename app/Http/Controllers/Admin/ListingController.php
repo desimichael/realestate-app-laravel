@@ -67,14 +67,12 @@ class ListingController extends Controller
         $listing->bedrooms = $request->get('bedrooms');
         $listing->bathrooms = $request->get('bathrooms');
         $listing->squarefootage = $request->get('squarefootage');
-        $listing->status = "draft";
+        // $listing->status = $request->get('status');
 
 
 
-        $listing->slug = Helper::slugify("{$request->address}-{$request->address2}-{$request->city}-{$request->state}-{$request->zipcode}-{$request->bedrooms}-{$request->bathrooms}-{$request->squarefootage}");
+        $listing->slug = Helper::slugify("{$request->address}-{$request->address2}-{$request->city}-{$request->state}-{$request->zipcode}");
         $listing->save();
-
-
         
         return redirect("/admin/listings/{$listing->slug}/{$listing->id}/edit")->with('success', 'Successfully Created New Listing');
     }
@@ -103,8 +101,8 @@ class ListingController extends Controller
             'id' => $id,
             'slug' => $slug,
             ])->first();
+            
         $this->authorize('update', $listing);
-        
         return view('admin/listings/edit', ['listing' => $listing]);
     }
 

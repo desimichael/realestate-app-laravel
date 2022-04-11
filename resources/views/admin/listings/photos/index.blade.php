@@ -1,12 +1,12 @@
 @extends('layouts.admin')
 
-@section('page-title', 'Show All Listings')
+@section('page-title', 'Show Listing Photos')
 
 
 @section('content')
 
 <div id="MainContent">
-  <h1>Show All Listings</h1>
+  <h1>Show Listing Photos</h1>
   <div class="row">
     <div class="col-md-12">
       <div class="bgc-white bd bdrs-3 p-20">
@@ -14,8 +14,9 @@
           <thead>
             <tr>
               <th scope="col">ID</th>
-              <th scope="col">Address</th>
-              <th scope="col">Status</th>
+              <th scope="col">Photo</th>
+              <th scope="col">Name</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>

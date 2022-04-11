@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('page-title', 'Edit a Listing')
+@section('page-title', 'Edit Listing')
 
 
 @section('content')
@@ -147,7 +147,7 @@
                   @enderror
             </div>
             <div class="form-group" style="margin-top: 1rem; display: flex; flex-direction: column;">
-              <a href="{{ route('admin.listings.edit',['slug' => $listing->slug, 'id' => $listing->id]) }}" onclick="return confirm('Are you sure you want to edit this photo?')"
+              <a href="{{ route('admin.listings.delete',['slug' => $listing->slug, 'id' => $listing->id]) }}" onclick="return confirm('Are you sure you want to delete this listing?')"
                       class="btn cur-p btn-success btn-color" style="margin-top: .5rem; width: 100%;">Gallery</a>
               <button type="submit"
                       class="btn btn-primary btn-color" style="margin-top: .5rem; width: 100%;">Save</button>
