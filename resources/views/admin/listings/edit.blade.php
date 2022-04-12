@@ -117,7 +117,7 @@
                 <h3>Details</h3>
                 <div class="mb-3 col-md-12">
                   <label class="form-label" for="description">Description</label>
-                  <textarea type="text" class="form-control" name="description" id="description" placeholder="ex: Property Description goes here...">{{ old('description', $listing->description) }}</textarea>
+                  <textarea type="text" class="form-control" name="description" id="description" placeholder="ex: Property Description...">{{ old('description', $listing->description) }}</textarea>
                   @error('description')
                     <div class="error-sub-text">
                         {{$message}}
@@ -148,7 +148,7 @@
             </div>
             <div class="form-group" style="margin-top: 1rem; display: flex; flex-direction: column;">
               <a href="{{ route('admin.listings.edit',['slug' => $listing->slug, 'id' => $listing->id]) }}" onclick="return confirm('Are you sure you want to edit this photo?')"
-                      class="btn cur-p btn-success btn-color" style="margin-top: .5rem; width: 100%;">Gallery</a>
+                      class="btn cur-p btn-success btn-color" style="margin-top: 1rem; width: 100%;">Gallery</a>
               <button type="submit"
                       class="btn btn-primary btn-color" style="margin-top: .5rem; width: 100%;">Save</button>
               <a href="{{ route('admin.listings.delete',['slug' => $listing->slug, 'id' => $listing->id]) }}" onclick="return confirm('Are you sure you want to delete this listing?')"

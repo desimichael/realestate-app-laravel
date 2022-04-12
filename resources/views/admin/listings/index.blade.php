@@ -40,7 +40,7 @@
                       {{$listing->status}}
                     </div> 
                   @else
-                    <div class="btn cur-p btn-secondary btn-color" style="width: 100px; text-transform: capitalize; font-size: .8rem;">
+                    <div class="btn cur-p btn-secondary" style="width: 100px; text-transform: capitalize; font-size: .8rem;">
                       {{$listing->status}}
                     </div> 
                   @endif
