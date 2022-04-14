@@ -1,12 +1,12 @@
 @extends('layouts.admin')
 
-@section('page-title', 'Show Listing Photos')
+@section('page-title', 'Show All Photos')
 
 
 @section('content')
 
 <div id="MainContent">
-  <h1>Show Listing Photos</h1>
+  <h1>Show All Photos</h1>
   <div class="row">
     <div class="col-md-12">
       <div class="bgc-white bd bdrs-3 p-20">

@@ -43,21 +43,21 @@ Route::group([
 
     Route::put('/{slug}/{id}',[\App\Http\Controllers\Admin\ListingController::class, 'update'])->name('update');
 
-    Route::get('/{slug}/{id}/delete',[\App\Http\Controllers\Admin\ListingController::class, 'destroy'])->name('delete');
+    Route::get('/{slug}/{id}/delete',[\App\Http\Controllers\Admin\ListingController::class, 'delete'])->name('delete');
 
     // Start of Listing Photos Section
     
-    // Route::get('/{slug}/{id}/photos',[\App\Http\Controllers\Admin\PhotoController::class, 'index'])->name('photos');
+    Route::get('/{slug}/{id}/photos',[\App\Http\Controllers\Admin\PhotoController::class, 'index'])->name('photos');
 
-    // Route::get('/{slug}/{id}/photos/create',[\App\Http\Controllers\Admin\PhotoController::class, 'create'])->name('photos.create');
+    Route::get('/{slug}/{id}/photos/create',[\App\Http\Controllers\Admin\PhotoController::class, 'create'])->name('photos.create');
 
-    // Route::post('/{slug}/{id}/photos',[\App\Http\Controllers\Admin\PhotoController::class, 'store'])->name('photos.store');
+    Route::post('/{slug}/{id}/photos',[\App\Http\Controllers\Admin\PhotoController::class, 'store'])->name('photos.store');
 
-    // Route::get('/{slug}/{id}/photos/{photo_id}/edit',[\App\Http\Controllers\Admin\PhotoController::class, 'edit'])->name('photos.edit');
+    Route::get('/{slug}/{id}/photos/{photo_id}/edit',[\App\Http\Controllers\Admin\PhotoController::class, 'edit'])->name('photos.edit');
 
-    // Route::put('/{slug}/{id}/photos',[\App\Http\Controllers\Admin\PhotoController::class, 'update'])->name('photos.update');
+    Route::put('/{slug}/{id}/photos',[\App\Http\Controllers\Admin\PhotoController::class, 'update'])->name('photos.update');
 
-    // Route::get('/{slug}/{id}/photos/{photo_id}/delete',[\App\Http\Controllers\Admin\PhotoController::class, 'delete'])->name('photos.delete');
+    Route::get('/{slug}/{id}/photos/{photo_id}/delete',[\App\Http\Controllers\Admin\PhotoController::class, 'delete'])->name('photos.delete');
 
    });
 });
