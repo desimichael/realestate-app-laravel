@@ -940,11 +940,11 @@ select {
 .p-6 {
   padding: 1.5rem;
 }
-.p-0 {
-  padding: 0px;
-}
 .p-20 {
   padding: 5rem;
+}
+.p-0 {
+  padding: 0px;
 }
 .p-10 {
   padding: 2.5rem;
