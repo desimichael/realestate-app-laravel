@@ -147,8 +147,8 @@
                   @enderror
             </div>
             <div class="form-group" style="margin-top: 1rem; display: flex; flex-direction: column;">
-              <a href="{{ route('admin.listings.delete',['slug' => $listing->slug, 'id' => $listing->id]) }}" onclick="return confirm('Are you sure you want to delete this listing?')"
-                      class="btn cur-p btn-success btn-color" style="margin-top: .5rem; width: 100%;">Gallery</a>
+              <a href="{{ route('admin.listings.photos',['slug' => $listing->slug, 'id' => $listing->id]) }}" onclick="return confirm('Have you saved your updates?')"
+                      class="btn cur-p btn-success btn-color" style="margin-top: 1rem; width: 100%;">Photos</a>
               <button type="submit"
                       class="btn btn-primary btn-color" style="margin-top: .5rem; width: 100%;">Save</button>
               <a href="{{ route('admin.listings.delete',['slug' => $listing->slug, 'id' => $listing->id]) }}" onclick="return confirm('Are you sure you want to delete this listing?')"

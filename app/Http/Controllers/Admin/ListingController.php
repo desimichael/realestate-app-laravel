@@ -127,8 +127,8 @@ class ListingController extends Controller
         ]);
 
         $listing = Listing::where([
-            'id' => $id,
             'slug' => $slug,
+            'id' => $id,
             ])->first();
         $this->authorize('update', $listing);
         $listing->address = $request->get('address');
